@@ -1,0 +1,113 @@
+.carusel {
+  padding: 80px 56px 0 56px;
+  &__title {
+    font: {
+      family: 'Open Sans', sans-serif;
+      size: 24px;
+      weight: bold;
+    }
+    text-align: center;
+    margin: 0 0 17px 0;
+  }
+}
+
+.caruselOuter {
+  position: relative;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.caruselInner {
+  position: relative;
+  overflow: hidden;
+
+
+  &__left {
+    background: url("../img/mx.png") -300px 0 no-repeat;
+    width: 29px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    left: -39px;
+    top: 50%;
+    margin-top: -25px;
+  }
+  &__right {
+    background: url("../img/mx.png") -300px -50px no-repeat;
+    width: 29px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: -39px;
+    top: 50%;
+    margin-top: -25px;
+  }
+  &__slider {
+    position: relative;
+  }
+  &__item {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  .carusel {
+    padding: 53px 0 0 0;
+    &__title {
+      margin-bottom: 28px;
+    }
+  }
+
+  .caruselInner {
+    &__slider {
+      text-align: center;
+    }
+    &__item {
+      width: 300px!important;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 16px 40px 20px;
+      float: none;
+    }
+
+  }
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  .carusel {
+    padding: 58px 0 0 0;
+    &__title {
+      text-align: left;
+    }
+  }
+
+  .caruselInner {
+    &__slider {
+      margin-left: -20px;
+    }
+    &__item {
+      width: 265px!important;
+      margin: 0 0 20px 20px;
+      float: left;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+

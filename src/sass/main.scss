@@ -233,25 +233,25 @@ body {
     div.owl-prev {
       left: -13px;
       &:before {
-        background-position: 0px -47px;
+        background-position: -141px -72px;
       }
       &:hover {
         &:before {
-          background-position: -11px -47px;
+          background-position: -174px -72px;
         }
       }
     }
     div.owl-next {
       right: -13px;
       &:before {
-        background-position: -22px -47px;
+        background-position: -152px -72px;
         right: 50%;
         left: auto;
         margin: -11px -8px 0 0;
       }
       &:hover {
         &:before {
-          background-position: -33px -47px;
+          background-position: -163px -72px;
         }
       }
     }
@@ -282,7 +282,142 @@ body {
     h3 {
       text-transform: uppercase;
       padding: 12px 0 4px 0;
+      font-weight: normal;
     }
   }
 }
 
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.stepsWrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.stepsPic {
+  position: relative;
+  flex: 1 1 41.03%;
+  &:before {
+    content: '';
+    width: 71px;
+    height: 6px;
+    background: #43aa26;
+    top: -3px;
+    left: -3px;
+    position: absolute;
+  }
+  &:after {
+    content: '';
+    width: 6px;
+    height: 62px;
+    background: #43aa26;
+    top: 3px;
+    left: -3px;
+    position: absolute;
+  }
+}
+.steps {
+  background: #fff;
+  //box-shadow: 2px 2px 2px 3px rgba (0,0,0,0.2);
+  flex: 1 1 58.97%;
+  align-self: flex-end;
+  padding: 44px 0 0 0;
+  h2 {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+.stepsList {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    flex: 1 1 33.3%;
+    text-align: center;
+    position: relative;
+    padding: 40px 0;
+    &:before {
+      content: '';
+      background-image: url(../img/sprite.png);
+      background-position: 0px -164px;
+      width: 17px;
+      height: 182px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  &__pic {
+    height: 96px;
+    line-height: 96px;
+    i {
+      vertical-align: middle;
+    }
+  }
+  &__text {
+    max-width: 120px;
+    margin: 0 auto;
+    line-height: 1.2;
+    padding: 32px 0 0 0;
+  }
+}
+.icon-step {
+  position: absolute;
+  bottom: 37px;
+  right: -19px;
+}
+
+.video {
+  padding: 35px 0 0 0;
+  h2 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.icon-play {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  &:hover {
+    background-position: -150px -96px;
+  }
+}
+
+.videoSlider {
+  &__item {
+    figure {
+      height: 240px;
+      position: relative;
+      video {
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__poster {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

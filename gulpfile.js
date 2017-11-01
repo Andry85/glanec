@@ -10,6 +10,7 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
+var spritesmith = require('gulp.spritesmith');
 
 
 
@@ -21,6 +22,19 @@ gulp.task('sass', function(){
     .pipe(browserSync.reload({
       stream: true
     }))
+});
+
+gulp.task('sprite', function() {
+    var spriteData =
+        gulp.src('src/img/icons/*.*') // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.css',
+                imgPath: '../img/sprite.png'
+            }));
+
+    spriteData.img.pipe(gulp.dest('src/img/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('src/css/')); // путь, куда сохраняем стили
 });
 
 
@@ -78,7 +92,7 @@ gulp.task('clean:dist', function(callback){
 });
 
 gulp.task('default', function (callback) {
-    runSequence(['sass', 'browserSync', 'watch'], callback)
+    runSequence(['sass', 'sprite', 'browserSync', 'watch'], callback)
 });
 
 

@@ -16,135 +16,147 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-action-before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 6px;
+  height: 10px;
+}
 .icon-box {
   background-image: url(../img/sprite.png);
-  background-position: 0px -96px;
+  background-position: 0px -550px;
   width: 100px;
   height: 68px;
 }
 .icon-car {
   background-image: url(../img/sprite.png);
-  background-position: -100px 0px;
+  background-position: 0px -618px;
   width: 100px;
   height: 72px;
 }
 .icon-catalogList-nav-left-hover {
   background-image: url(../img/sprite.png);
-  background-position: -174px -72px;
+  background-position: 0px -51px;
   width: 11px;
   height: 17px;
 }
 .icon-catalogList-nav-left {
   background-image: url(../img/sprite.png);
-  background-position: -185px -72px;
+  background-position: 0px -153px;
   width: 11px;
   height: 17px;
 }
 .icon-catalogList-nav-right-hover {
   background-image: url(../img/sprite.png);
-  background-position: -154px -133px;
+  background-position: 0px -68px;
   width: 11px;
   height: 17px;
 }
 .icon-catalogList-nav-right {
   background-image: url(../img/sprite.png);
-  background-position: -165px -133px;
+  background-position: 0px -85px;
   width: 11px;
   height: 17px;
 }
+.icon-information {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -487px;
+  width: 63px;
+  height: 63px;
+}
 .icon-logo {
   background-image: url(../img/sprite.png);
-  background-position: -117px -164px;
+  background-position: 0px -286px;
   width: 48px;
   height: 47px;
 }
 .icon-open-window {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -690px;
   width: 100px;
   height: 96px;
 }
 .icon-phone-call {
   background-image: url(../img/sprite.png);
-  background-position: -121px -72px;
+  background-position: 0px -170px;
   width: 20px;
   height: 20px;
 }
 .icon-play-activ {
   background-image: url(../img/sprite.png);
-  background-position: -17px -164px;
+  background-position: 0px -333px;
   width: 50px;
   height: 50px;
 }
 .icon-play {
   background-image: url(../img/sprite.png);
-  background-position: -67px -164px;
+  background-position: 0px -383px;
   width: 50px;
   height: 50px;
 }
 .icon-pr-left-hover {
   background-image: url(../img/sprite.png);
-  background-position: -176px -133px;
+  background-position: 0px -34px;
   width: 11px;
   height: 17px;
 }
 .icon-pr-left {
   background-image: url(../img/sprite.png);
-  background-position: -141px -72px;
+  background-position: 0px -136px;
   width: 11px;
   height: 17px;
 }
 .icon-pr-right-hover {
   background-image: url(../img/sprite.png);
-  background-position: -152px -72px;
+  background-position: 0px -119px;
   width: 11px;
   height: 17px;
 }
 .icon-pr-right {
   background-image: url(../img/sprite.png);
-  background-position: -163px -72px;
+  background-position: 0px -102px;
   width: 11px;
   height: 17px;
 }
 .icon-search {
   background-image: url(../img/sprite.png);
-  background-position: -100px -72px;
+  background-position: 0px -190px;
   width: 21px;
   height: 22px;
 }
 .icon-step-1 {
   background-image: url(../img/sprite.png);
-  background-position: -154px -96px;
+  background-position: 0px -249px;
   width: 37px;
   height: 37px;
 }
 .icon-step-2 {
   background-image: url(../img/sprite.png);
-  background-position: -17px -214px;
+  background-position: 0px -212px;
   width: 37px;
   height: 37px;
 }
 .icon-steps-shadow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -164px;
+  background-position: 0px -786px;
   width: 17px;
   height: 182px;
 }
 .icon-videoSlider-left {
   background-image: url(../img/sprite.png);
-  background-position: -191px -96px;
+  background-position: 0px -22px;
   width: 8px;
   height: 12px;
 }
 .icon-videoSlider-nav {
   background-image: url(../img/sprite.png);
-  background-position: -100px -96px;
+  background-position: 0px -433px;
   width: 54px;
   height: 54px;
 }
 .icon-videoSlider-right {
   background-image: url(../img/sprite.png);
-  background-position: -191px -108px;
+  background-position: 0px -10px;
   width: 8px;
   height: 12px;
 }

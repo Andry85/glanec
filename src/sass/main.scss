@@ -612,6 +612,38 @@ body {
       }
     }
   }
+
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    div {
+      background-image: url(../img/sprite.png);
+      top: -9px;
+      text-indent: -9000px;
+      width: 11px;
+      height: 17px;
+      position: absolute;
+    }
+  }
+  div.owl-prev {
+    left: -41px;
+    background-position: -185px -72px;
+    &:hover {
+      background-position: -174px -72px;
+    }
+  }
+  div.owl-next {
+    right: -41px;
+    background-position: -165px -133px;
+    &:hover {
+      background-position: -154px -133px;
+    }
+  }
+}
+
+.summa {
   &__price {
     text-align: center;
     padding: 19px 0 0 0;
@@ -664,6 +696,87 @@ body {
       }
     }
   }
+}
+
+.thumbs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+
+.product {
+  &__inner {
+    padding: 31px 0 0 0;
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0 0 26px 0;
+    }
+  }
+}
+
+.productBox {
+  display: flex;
+  justify-content: space-between;
+  &__desc {
+    background: #fff;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    padding: 30px;
+    width: 58.97%;
+    flex: none;
+  }
+  &__action {
+    width: 38.46%;
+    flex: none;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__gallery {
+    flex-grow: 0;
+    width: 47.46%;
+    flex: none;
+  }
+  &__text {
+    width: 49.37%;
+    flex: none;
+    h4 {
+      margin: 0;
+      padding: 0 0 8px 0;
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &__section {
+    &:first-child {
+      margin-bottom: 19px;
+    }
+    height: 180px;
+    flex: none;
+    background: #fff;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    text-align: center;
+  }
+}
+.galleryPic {
+  img {
+    width: 100%;
+  }
+}
+.gallerySlider {
+  padding: 15px 26px 0;
   .owl-nav {
     position: absolute;
     top: 50%;
@@ -679,28 +792,40 @@ body {
     }
   }
   div.owl-prev {
-    left: -41px;
+    left: -26px;
     background-position: -185px -72px;
     &:hover {
       background-position: -174px -72px;
     }
   }
   div.owl-next {
-    right: -41px;
+    right: -26px;
     background-position: -165px -133px;
     &:hover {
       background-position: -154px -133px;
     }
   }
 }
-.thumbs {
-  display: flex;
-  justify-content: space-between;
-}
 
-.tab {
-  display: none;
-}
-.tab.active {
-  display: block;
+.mesage {
+  background: #f15858;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  line-height: 35px;
+  padding: 0 14px;
+  top: -10px;
+  &:before {
+    content: '';
+    background-image: url(../img/sprite.png);
+    background-position: -191px -120px;
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    left: -6px;
+    top: 0
+  }
 }

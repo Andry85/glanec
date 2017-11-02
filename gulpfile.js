@@ -28,6 +28,7 @@ gulp.task('sprite', function() {
     var spriteData =
         gulp.src('src/img/icons/*.*') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
+                algorithm: 'top-down',
                 imgName: 'sprite.png',
                 cssName: 'sprite.css',
                 imgPath: '../img/sprite.png'

@@ -24,13 +24,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-box {
   background-image: url(../img/sprite.png);
-  background-position: 0px -550px;
+  background-position: 0px -597px;
   width: 100px;
   height: 68px;
 }
 .icon-car {
   background-image: url(../img/sprite.png);
-  background-position: 0px -618px;
+  background-position: 0px -665px;
   width: 100px;
   height: 72px;
 }
@@ -60,9 +60,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-information {
   background-image: url(../img/sprite.png);
-  background-position: 0px -487px;
+  background-position: 0px -534px;
   width: 63px;
   height: 63px;
+}
+.icon-logo-footer {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -333px;
+  width: 48px;
+  height: 47px;
 }
 .icon-logo {
   background-image: url(../img/sprite.png);
@@ -72,7 +78,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-open-window {
   background-image: url(../img/sprite.png);
-  background-position: 0px -690px;
+  background-position: 0px -737px;
   width: 100px;
   height: 96px;
 }
@@ -84,13 +90,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-play-activ {
   background-image: url(../img/sprite.png);
-  background-position: 0px -333px;
+  background-position: 0px -430px;
   width: 50px;
   height: 50px;
 }
 .icon-play {
   background-image: url(../img/sprite.png);
-  background-position: 0px -383px;
+  background-position: 0px -380px;
   width: 50px;
   height: 50px;
 }
@@ -126,19 +132,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-step-1 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -249px;
+  background-position: 0px -212px;
   width: 37px;
   height: 37px;
 }
 .icon-step-2 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -212px;
+  background-position: 0px -249px;
   width: 37px;
   height: 37px;
 }
 .icon-steps-shadow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -786px;
+  background-position: 0px -833px;
   width: 17px;
   height: 182px;
 }
@@ -150,7 +156,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-videoSlider-nav {
   background-image: url(../img/sprite.png);
-  background-position: 0px -433px;
+  background-position: 0px -480px;
   width: 54px;
   height: 54px;
 }

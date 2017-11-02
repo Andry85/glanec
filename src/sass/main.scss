@@ -49,7 +49,7 @@ body {
       text-decoration: none;
     }
 
-    h1 {
+    h1, h2 {
       align-self: center;
       margin: 0;
       padding: 0 0 0 8px;
@@ -113,6 +113,8 @@ body {
     bottom: 0;
     left: 0;
   }
+  width: 100%;
+  padding: 0 16px;
 }
 
 .navi {
@@ -292,6 +294,7 @@ body {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
+  position: relative;
 }
 
 .stepsWrap {
@@ -768,6 +771,12 @@ body {
     box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
     position: relative;
     text-align: center;
+    h4 {
+      font: {
+        family: 'Roboto', sans-serif;
+        weight: bold;
+      }
+    }
   }
 }
 .galleryPic {
@@ -827,5 +836,116 @@ body {
     position: absolute;
     left: -6px;
     top: 0
+  }
+}
+
+.deliveryInfo {
+  position: relative;
+  padding: 13px 0 0 0;
+  &__popup {
+    display: none;
+    background: #fff;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.4);
+    width: 266px;
+    position: absolute;
+    left: -91px;
+    top: 6px;
+    padding: 15px 12px 15px 16px;
+    p {
+      margin: 0;
+      line-height: 1.1;
+    }
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 12px solid #fff;
+      position: absolute;
+      right: -12px;
+      top: 26px;
+    }
+  }
+  .icon-information {
+    cursor: pointer;
+  }
+}
+.priceWrap {
+  padding: 17px 0 0 0;
+  max-width: 231px;
+  margin: 0 auto;
+  .summa {
+    &__price {
+      padding: 0;
+    }
+  }
+}
+
+.content {
+  overflow: auto;
+  position: relative;
+  height: 75px;
+  text-align: left;
+}
+
+
+
+.footer {
+  position: relative;
+  margin: 39px 0 0 0;
+  height: 519px;
+  .container {
+    height: 100%;
+  }
+  &__block {
+    background: #fff;
+    width: 450px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 31px 0 23px 0;
+    .logo {
+      margin: 0 auto 30px auto;
+      max-width: 270px;
+    }
+  }
+  &__bottom {
+    padding: 24px 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .call {
+      width: auto;
+      background: #43aa26;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+.map {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.footerList {
+  border: 1px solid #e5e5e5;
+  border-width: 1px 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 21px;
+  &__item {
+    flex: 1 1 33.3%;
+    padding: 2px 0 1px 0;
+    a {
+      color: #2f3131;
+      &:hover {
+        color: #5cb543;
+      }
+    }
   }
 }

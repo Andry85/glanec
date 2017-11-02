@@ -28,9 +28,33 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 100px;
   height: 72px;
 }
+.icon-catalogList-nav-left-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -72px;
+  width: 11px;
+  height: 17px;
+}
+.icon-catalogList-nav-left {
+  background-image: url(../img/sprite.png);
+  background-position: -185px -72px;
+  width: 11px;
+  height: 17px;
+}
+.icon-catalogList-nav-right-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -154px -133px;
+  width: 11px;
+  height: 17px;
+}
+.icon-catalogList-nav-right {
+  background-image: url(../img/sprite.png);
+  background-position: -165px -133px;
+  width: 11px;
+  height: 17px;
+}
 .icon-logo {
   background-image: url(../img/sprite.png);
-  background-position: -17px -164px;
+  background-position: -117px -164px;
   width: 48px;
   height: 47px;
 }
@@ -48,19 +72,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-play-activ {
   background-image: url(../img/sprite.png);
-  background-position: -150px -96px;
+  background-position: -17px -164px;
   width: 50px;
   height: 50px;
 }
 .icon-play {
   background-image: url(../img/sprite.png);
-  background-position: -100px -96px;
+  background-position: -67px -164px;
   width: 50px;
   height: 50px;
 }
 .icon-pr-left-hover {
   background-image: url(../img/sprite.png);
-  background-position: -152px -72px;
+  background-position: -176px -133px;
   width: 11px;
   height: 17px;
 }
@@ -72,7 +96,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-pr-right-hover {
   background-image: url(../img/sprite.png);
-  background-position: -174px -72px;
+  background-position: -152px -72px;
   width: 11px;
   height: 17px;
 }
@@ -90,13 +114,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-step-1 {
   background-image: url(../img/sprite.png);
-  background-position: -65px -164px;
+  background-position: -154px -96px;
   width: 37px;
   height: 37px;
 }
 .icon-step-2 {
   background-image: url(../img/sprite.png);
-  background-position: -102px -164px;
+  background-position: -17px -214px;
   width: 37px;
   height: 37px;
 }
@@ -105,4 +129,22 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: 0px -164px;
   width: 17px;
   height: 182px;
+}
+.icon-videoSlider-left {
+  background-image: url(../img/sprite.png);
+  background-position: -191px -96px;
+  width: 8px;
+  height: 12px;
+}
+.icon-videoSlider-nav {
+  background-image: url(../img/sprite.png);
+  background-position: -100px -96px;
+  width: 54px;
+  height: 54px;
+}
+.icon-videoSlider-right {
+  background-image: url(../img/sprite.png);
+  background-position: -191px -108px;
+  width: 8px;
+  height: 12px;
 }

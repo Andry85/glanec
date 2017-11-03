@@ -331,44 +331,22 @@ body {
       width: 100%; }
       .preambuleSlider__list .owl-nav div {
         position: absolute;
-        top: -13px;
-        width: 26px;
-        height: 26px;
+        top: -19px;
+        width: 38px;
+        height: 38px;
         text-indent: -9000px;
         overflow: hidden;
-        background: #fff;
-        -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-                transform: rotate(45deg); }
-        .preambuleSlider__list .owl-nav div:hover {
-          background: #43aa26; }
-        .preambuleSlider__list .owl-nav div:before {
-          content: '';
-          background-image: url(../img/sprite.png);
-          width: 11px;
-          height: 17px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: -6px 0 0 -8px;
-          -webkit-transform: rotate(-45deg);
-              -ms-transform: rotate(-45deg);
-                  transform: rotate(-45deg); }
+        background-image: url(../img/sprite.png); }
     .preambuleSlider__list div.owl-prev {
-      left: -13px; }
-      .preambuleSlider__list div.owl-prev:before {
-        background-position: -141px -72px; }
-      .preambuleSlider__list div.owl-prev:hover:before {
-        background-position: -174px -72px; }
+      left: -19px;
+      background-position: 0px -362px; }
+      .preambuleSlider__list div.owl-prev:hover {
+        background-position: 0px -324px; }
     .preambuleSlider__list div.owl-next {
-      right: -13px; }
-      .preambuleSlider__list div.owl-next:before {
-        background-position: -152px -72px;
-        right: 50%;
-        left: auto;
-        margin: -11px -8px 0 0; }
-      .preambuleSlider__list div.owl-next:hover:before {
-        background-position: -163px -72px; }
+      right: -19px;
+      background-position: 0px -286px; }
+      .preambuleSlider__list div.owl-next:hover {
+        background-position: 0px -400px; }
     .preambuleSlider__list .owl-dots {
       position: absolute;
       width: 100%;
@@ -470,7 +448,7 @@ body {
     .stepsList__item:before {
       content: '';
       background-image: url(../img/sprite.png);
-      background-position: 0px -164px;
+      background-position: 0px -985px;
       width: 17px;
       height: 182px;
       position: absolute;
@@ -505,7 +483,7 @@ body {
   left: 0;
   bottom: -25px; }
   .icon-play:hover {
-    background-position: -150px -96px; }
+    background-position: 0px -582px; }
 
 .videoSlider {
   position: relative;
@@ -563,7 +541,7 @@ body {
     z-index: 3; }
   .videoSlider .owl-nav {
     background-image: url(../img/sprite.png);
-    background-position: -100px -96px;
+    background-position: 0px -632px;
     width: 54px;
     height: 54px;
     position: absolute;
@@ -579,10 +557,10 @@ body {
       background-image: url(../img/sprite.png);
       top: 20px; }
     .videoSlider .owl-nav div.owl-prev {
-      background-position: -185px -72px;
+      background-position: 0px -22px;
       left: 16px; }
     .videoSlider .owl-nav div.owl-next {
-      background-position: -191px -96px;
+      background-position: 0px -10px;
       right: 16px; }
 
 .action {
@@ -703,15 +681,15 @@ body {
 
 .catalogList div.owl-prev {
   left: -41px;
-  background-position: -185px -72px; }
+  background-position: 0px -153px; }
   .catalogList div.owl-prev:hover {
-    background-position: -174px -72px; }
+    background-position: 0px -51px; }
 
 .catalogList div.owl-next {
   right: -41px;
-  background-position: -165px -133px; }
+  background-position: 0px -85px; }
   .catalogList div.owl-next:hover {
-    background-position: -154px -133px; }
+    background-position: 0px -68px; }
 
 .summa__price {
   text-align: center;
@@ -886,14 +864,14 @@ body {
       position: absolute; }
   .gallerySlider div.owl-prev {
     left: -26px;
-    background-position: -185px -72px; }
+    background-position: 0px -153px; }
     .gallerySlider div.owl-prev:hover {
-      background-position: -174px -72px; }
+      background-position: 0px -51px; }
   .gallerySlider div.owl-next {
     right: -26px;
-    background-position: -165px -133px; }
+    background-position: 0px -85px; }
     .gallerySlider div.owl-next:hover {
-      background-position: -154px -133px; }
+      background-position: 0px -68px; }
 
 .mesage {
   background: #f15858;
@@ -909,7 +887,7 @@ body {
   .mesage:before {
     content: '';
     background-image: url(../img/sprite.png);
-    background-position: -191px -120px;
+    background-position: 0px 0px;
     width: 6px;
     height: 10px;
     position: absolute;

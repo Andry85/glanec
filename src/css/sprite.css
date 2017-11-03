@@ -24,13 +24,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-box {
   background-image: url(../img/sprite.png);
-  background-position: 0px -597px;
+  background-position: 0px -749px;
   width: 100px;
   height: 68px;
 }
 .icon-car {
   background-image: url(../img/sprite.png);
-  background-position: 0px -665px;
+  background-position: 0px -817px;
   width: 100px;
   height: 72px;
 }
@@ -60,25 +60,37 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-information {
   background-image: url(../img/sprite.png);
-  background-position: 0px -534px;
+  background-position: 0px -686px;
   width: 63px;
   height: 63px;
 }
+.icon-left-arr {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -362px;
+  width: 38px;
+  height: 38px;
+}
+.icon-left-hover-arr {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -324px;
+  width: 38px;
+  height: 38px;
+}
 .icon-logo-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px -333px;
+  background-position: 0px -485px;
   width: 48px;
   height: 47px;
 }
 .icon-logo {
   background-image: url(../img/sprite.png);
-  background-position: 0px -286px;
+  background-position: 0px -438px;
   width: 48px;
   height: 47px;
 }
 .icon-open-window {
   background-image: url(../img/sprite.png);
-  background-position: 0px -737px;
+  background-position: 0px -889px;
   width: 100px;
   height: 96px;
 }
@@ -90,13 +102,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-play-activ {
   background-image: url(../img/sprite.png);
-  background-position: 0px -430px;
+  background-position: 0px -582px;
   width: 50px;
   height: 50px;
 }
 .icon-play {
   background-image: url(../img/sprite.png);
-  background-position: 0px -380px;
+  background-position: 0px -532px;
   width: 50px;
   height: 50px;
 }
@@ -124,6 +136,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 11px;
   height: 17px;
 }
+.icon-right-arr {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -286px;
+  width: 38px;
+  height: 38px;
+}
+.icon-right-hover-arr {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -400px;
+  width: 38px;
+  height: 38px;
+}
 .icon-search {
   background-image: url(../img/sprite.png);
   background-position: 0px -190px;
@@ -132,19 +156,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-step-1 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -212px;
+  background-position: 0px -249px;
   width: 37px;
   height: 37px;
 }
 .icon-step-2 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -249px;
+  background-position: 0px -212px;
   width: 37px;
   height: 37px;
 }
 .icon-steps-shadow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -833px;
+  background-position: 0px -985px;
   width: 17px;
   height: 182px;
 }
@@ -156,7 +180,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-videoSlider-nav {
   background-image: url(../img/sprite.png);
-  background-position: 0px -480px;
+  background-position: 0px -632px;
   width: 54px;
   height: 54px;
 }

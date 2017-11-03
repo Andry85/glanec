@@ -82,6 +82,11 @@ gulp.task('css', function() {
   .pipe(gulp.dest('dist/css'))
 });
 
+gulp.task('video', function() {
+    return gulp.src('src/video/**/*')
+        .pipe(gulp.dest('dist/video'))
+});
+
 
 gulp.task('js', function() {
   return gulp.src('src/js/**/*')
@@ -100,5 +105,5 @@ gulp.task('default', function (callback) {
 
 
 gulp.task('build', function (callback) {
-    runSequence(['clean:dist', 'sass', 'useref', 'images', 'js', 'css'], callback)
+    runSequence(['clean:dist', 'sass', 'useref', 'images', 'js', 'css', 'video'], callback)
 });

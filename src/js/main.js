@@ -31,13 +31,13 @@
     /*********************************************************/
     /* start video slider   */
     /********************************************************/
-    $('.videoSlider .owl-carousel').owlCarousel({
-        items: 3,
-        margin: 31,
-        autoHeight:true,
-        nav: true,
-        dots: false
-    });
+        $('.videoSlider .owl-carousel').owlCarousel({
+            items: 3,
+            margin: 31,
+            autoHeight:true,
+            nav: true,
+            dots: false
+        });
     /*********************************************************/
     /* end video slider  */
     /********************************************************/
@@ -45,13 +45,13 @@
     /*********************************************************/
     /* start catalog slider   */
     /********************************************************/
-    $('.catalogList .owl-carousel').owlCarousel({
-        items: 4,
-        margin: 30,
-        autoHeight:true,
-        nav: true,
-        dots: false
-    });
+        $('.catalogList .owl-carousel').owlCarousel({
+            items: 4,
+            margin: 30,
+            autoHeight:true,
+            nav: true,
+            dots: false
+        });
     /*********************************************************/
     /* end catalog slider  */
     /********************************************************/
@@ -60,16 +60,16 @@
     /*********************************************************/
     /* Start TABS  */
     /********************************************************/
-    $('.tabsTitles li a').on('click', function(e){
-        e.preventDefault();
-        var $tabs = $(".tabsOuter");
-        var $tabsList = $tabs.children();
-        $(this).parent('li').addClass('tabsTitles__item--activ').siblings().removeClass('tabsTitles__item--activ');
-        var $parent = $(this).parent('li');
-        var $parentIndex = $parent.index();
-        var $current = $tabsList[$parentIndex];
-        $($current).addClass('active').siblings().removeClass('active');
-    });
+        $('.tabsTitles li a').on('click', function(e){
+            e.preventDefault();
+            var $tabs = $(".tabsOuter");
+            var $tabsList = $tabs.children();
+            $(this).parent('li').addClass('tabsTitles__item--activ').siblings().removeClass('tabsTitles__item--activ');
+            var $parent = $(this).parent('li');
+            var $parentIndex = $parent.index();
+            var $current = $tabsList[$parentIndex];
+            $($current).addClass('active').siblings().removeClass('active');
+        });
     /*********************************************************/
     /* End TABS  */
     /********************************************************/
@@ -77,13 +77,13 @@
     /*********************************************************/
     /* start product slider   */
     /********************************************************/
-    $('.gallerySlider .owl-carousel').owlCarousel({
-        items: 3,
-        margin: 14,
-        autoHeight:true,
-        nav: true,
-        dots: false
-    });
+        $('.gallerySlider .owl-carousel').owlCarousel({
+            items: 3,
+            margin: 14,
+            autoHeight:true,
+            nav: true,
+            dots: false
+        });
     /*********************************************************/
     /* end product slider  */
     /********************************************************/
@@ -95,11 +95,28 @@
         $(".deliveryInfo .icon-information").mouseenter(function() {
             $(this).next(".deliveryInfo__popup").show();
         });
-    $(".deliveryInfo__popup").mouseleave(function() {
-        $(this).hide();
-    });
+        $(".deliveryInfo__popup").mouseleave(function() {
+            $(this).hide();
+        });
     /*********************************************************/
     /* end popup   */
+    /********************************************************/
+
+    /*********************************************************/
+    /* start gallery   */
+    /********************************************************/
+        $(".thumbs li a").click(function(e){
+            e.preventDefault();
+            var $href = $(this).attr('href');
+            $(this).parents(".catalogList__inner").children('figure').children('img').attr('src', $href);
+        });
+        $(".gallerySlider__item a").click(function(e){
+            e.preventDefault();
+            var $href = $(this).attr('href');
+            $(this).parents(".productBox__gallery").find('.galleryPic img').attr('src', $href);
+        });
+    /*********************************************************/
+    /* end gallery   */
     /********************************************************/
 
 

@@ -16,25 +16,41 @@ body {
 
 .header {
   background: #fff;
+  position: relative;
   &__inner {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1190px;
     margin: auto;
     align-items: center;
     padding: 21px 10px 23px 10px;
+    @include breakpoint(sm-down) {
+      padding-top: 32px;
+    }
   }
   &__box {
     flex-grow: 1;
-
   }
   &__box--1 {
     flex-basis: 31.2%;
+    @include breakpoint(lg-down) {
+      flex-basis: 28.2%;
+    }
   }
   &__box--2 {
     flex-basis: 31.97%;
+    @include breakpoint(lg-down) {
+      flex-basis: 28.97%;
+    }
+    @include breakpoint(md-down) {
+      display: none;
+    }
   }
   &__box--3 {
     flex-basis: 20.34%;
+    @include breakpoint(sm-down) {
+      display: none;
+    }
   }
   &__box--4 {
     flex-basis: 16.49%;
@@ -52,7 +68,7 @@ body {
     h1, h2 {
       align-self: center;
       margin: 0;
-      padding: 0 0 0 8px;
+      padding: 0 8px;
       color: #4f555a;
       font: {
         family: 'Roboto', sans-serif;
@@ -60,6 +76,14 @@ body {
         weight: 900;
       }
       text-transform: uppercase;
+    }
+    h1 {
+      @include breakpoint(xs-down) {
+        font-size: 18px;
+      }
+      @include breakpoint(xxs-down) {
+        font-size: 16px;
+      }
     }
 }
 
@@ -114,11 +138,17 @@ body {
     left: 0;
   }
   width: 100%;
-  padding: 0 16px;
+  padding: 0 6px;
+  @include breakpoint(xxs-down) {
+    font-size: 13px;
+  }
 }
 
 .navi {
   background: #3ea825 url("../img/navi.bg");
+  @include breakpoint(sm-down) {
+    display: none;
+  }
 }
 
 .navList {
@@ -164,6 +194,12 @@ body {
         display: inline-block;
         vertical-align: middle;
       }
+      @include breakpoint(lg-down) {
+        padding: 0;
+      }
+      @include breakpoint(md-down) {
+        font-size: 16px;
+      }
     }
   }
   &__item--search {
@@ -180,6 +216,8 @@ body {
 }
 
 .preambule {
+  background: url("../img/preambule.jpg") center center no-repeat;
+  height: 500px;
   margin: 0 0 -91px 0;
   position: relative;
 }
@@ -189,11 +227,17 @@ body {
   left: 0;
   top: 0;
   z-index: 2;
+  @include breakpoint(md-down) {
+    position: static;
+  }
   &__inner {
     max-width: 1190px;
     padding: 0 10px;
     margin: 0 auto;
     position: relative;
+    @include breakpoint(md-down) {
+      position: static;
+    }
   }
   &__list {
     right: 0;
@@ -203,6 +247,16 @@ body {
     background: #fff;
     border-top: 4px solid #43aa26;
     box-shadow: 3px 3px 20px -5px rgba(0,0,0,0.4);
+    @include breakpoint(lg-down) {
+      right: 15px;
+    }
+    @include breakpoint(md-down) {
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: -45px;
+    }
     .owl-nav {
       position: absolute;
       top: 50%;
@@ -279,6 +333,13 @@ body {
 .stepsPic {
   position: relative;
   flex: 1 1 41.03%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  @include breakpoint(sm-down) {
+    flex-basis: 100%;
+  }
   &:before {
     content: '';
     width: 71px;
@@ -308,6 +369,9 @@ body {
     text-align: center;
     margin: 0;
     text-transform: uppercase;
+    @include breakpoint(sm-down) {
+      font-size: 28px;
+    }
   }
 }
 
@@ -319,6 +383,9 @@ body {
     text-align: center;
     position: relative;
     padding: 40px 0;
+    @include breakpoint(xs-down) {
+      flex-basis: 100%;
+    }
     &:before {
       content: '';
       background-image: url(../img/sprite.png);
@@ -328,6 +395,9 @@ body {
       position: absolute;
       right: 0;
       bottom: 0;
+      @include breakpoint(xs-down) {
+        display: none;
+      }
     }
     &:last-child {
       &:before {
@@ -353,6 +423,9 @@ body {
   position: absolute;
   bottom: 37px;
   right: -19px;
+  @include breakpoint(xs-down) {
+    display: none;
+  }
 }
 
 .video {
@@ -360,6 +433,9 @@ body {
   h2 {
     text-transform: uppercase;
     margin: 0 0 27px 0;
+    @include breakpoint(sm-down) {
+      font-size: 28px;
+    }
   }
 }
 
@@ -367,6 +443,8 @@ body {
   position: absolute;
   left: 0;
   bottom: -25px;
+  z-index: 3;
+  cursor: pointer;
   &:hover {
     background-position: 0px -582px;
   }
@@ -397,6 +475,16 @@ body {
     z-index: 2;
   }
   &__item {
+    .videoPic {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
     figure {
       height: 240px;
       position: relative;
@@ -409,6 +497,7 @@ body {
         right: 0;
         width: 100%;
         height: 100%;
+        z-index: 1;
       }
     }
     h4 {
@@ -476,6 +565,9 @@ body {
     text-transform: uppercase;
     margin: 0 0 23px 0;
     color: #fff;
+    @include breakpoint(sm-down) {
+      font-size: 28px;
+    }
   }
   &__text {
     margin: 0;
@@ -504,6 +596,10 @@ body {
     text-align: center;
     margin: 0 17px 0 0;
     box-shadow: 3px 3px 20px -5px rgba(0,0,0,0.4);
+    @include breakpoint(xxs-down) {
+      width: 65px;
+      margin-right: 7px;
+    }
     span {
       font: {
         family: 'Cuprum', sans-serif;
@@ -530,15 +626,22 @@ body {
       text-transform: uppercase;
       text-align: center;
       padding: 24px 0 22px 0;
+      @include breakpoint(sm-down) {
+        font-size: 28px;
+      }
     }
   }
 
 }
 .tabsTitles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0 0 40px 0;
   &__item {
+    @include breakpoint(sm-down) {
+     flex: 1 1 100%;
+    }
     a {
       font-size: 16px;
       font-weight: bold;
@@ -586,6 +689,28 @@ body {
         height: 3px;
         margin: 21px auto 0 auto;
         display: block;
+      }
+    }
+  }
+
+  .owl-dots {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -20px;
+    height: 14px;
+    div {
+      margin: 0 3px;
+      display: inline-block;
+      vertical-align: top;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #43aa26;
+      border: 2px solid #fff;
+      &.active {
+        background: #fff;
+        border-color: #43aa26;
       }
     }
   }
@@ -694,12 +819,16 @@ body {
       text-align: center;
       text-transform: uppercase;
       padding: 0 0 26px 0;
+      @include breakpoint(sm-down) {
+        font-size: 28px;
+      }
     }
   }
 }
 
 .productBox {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   &__desc {
     background: #fff;
@@ -707,23 +836,38 @@ body {
     padding: 30px;
     width: 58.97%;
     flex: none;
+    @include breakpoint(md-down) {
+      width: 100%;
+    }
   }
   &__action {
     width: 38.46%;
     flex: none;
+    @include breakpoint(md-down) {
+      width: 100%;
+      margin: 19px 0 0 0;
+    }
   }
   &__content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   &__gallery {
     flex-grow: 0;
     width: 47.46%;
     flex: none;
+    @include breakpoint(md-down) {
+      width: 100%;
+    }
   }
   &__text {
     width: 49.37%;
     flex: none;
+    @include breakpoint(md-down) {
+      width: 100%;
+      margin: 25px 0 0 0;
+    }
     h4 {
       margin: 0;
       padding: 0 0 8px 0;
@@ -732,7 +876,7 @@ body {
   &__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 100%;
   }
   &__section {
@@ -825,6 +969,10 @@ body {
     left: -91px;
     top: 6px;
     padding: 15px 12px 15px 16px;
+    @include breakpoint(md-down) {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
     p {
       margin: 0;
       line-height: 1.1;
@@ -866,9 +1014,13 @@ body {
 
 
 .footer {
+  overflow: hidden;
   position: relative;
   margin: 39px 0 0 0;
   height: 519px;
+  @include breakpoint(md-down) {
+    height: auto;
+  }
   .container {
     height: 100%;
   }
@@ -879,9 +1031,13 @@ body {
     right: 0;
     bottom: 0;
     padding: 31px 0 23px 0;
+    @include breakpoint(md-down) {
+      width: 100%;
+      position: static;
+    }
     .logo {
       margin: 0 auto 30px auto;
-      max-width: 270px;
+      max-width: 280px;
     }
   }
   &__bottom {
@@ -890,20 +1046,35 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    .phone {
+      @include breakpoint(xxs-down) {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+      }
+    }
     .call {
       width: auto;
       background: #43aa26;
+      padding: 0 16px;
       &:before {
         display: none;
+      }
+      @include breakpoint(xxs-down) {
+        flex-basis: 100%;
       }
     }
   }
 }
 .map {
   position: absolute;
-  width: 100%;
-  left: 0;
   top: 0;
+  left: 50%;
+  max-width: inherit;
+  transform: translate(-50%, 0);
+  height: 100%;
+  @include breakpoint(md-down) {
+    display: none;
+  }
 }
 
 .footerList {
@@ -922,4 +1093,73 @@ body {
       }
     }
   }
+}
+
+#openPageslide {display: none;}
+#pageslide {display: none; position: fixed; top: -9999px;}
+
+
+@include breakpoint(sm-down) {
+  .navBox {
+    ul {
+      li {
+        a {
+          padding: 15px;
+          border-bottom: 1px solid #e3e3e3;
+          color: #fff;
+          background: #43aa26;
+          display: block;
+          font: {
+            family: 'Cuprum', sans-serif;
+            weight: normal;
+            size: 18px;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+
+  #openPageslide {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    z-index: 10;
+    width: 30px;
+    span {
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: #2c8a12;
+      margin-bottom: 2px;
+    }
+  }
+
+  #pageslide {
+    overflow: hidden;
+    display: block;
+    width: 77.2%;
+    top: 0;
+    left: -77.2%;
+    height: 100%;
+    z-index: 999999;
+    overflow-y: auto;
+    background: #2c8a12;
+  }
+
+  .pageslideBg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9998;
+  }
+
 }

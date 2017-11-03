@@ -22,6 +22,7 @@
             $(this).each(function(){
                 e.preventDefault();
                 $(this).parents(".videoSlider__item").find(".movie").get(0).play();
+                $(this).parents(".videoSlider__item").find(".videoPic").hide();
             });
         });
     /*********************************************************/
@@ -32,11 +33,22 @@
     /* start video slider   */
     /********************************************************/
         $('.videoSlider .owl-carousel').owlCarousel({
-            items: 3,
-            margin: 31,
             autoHeight:true,
             nav: true,
-            dots: false
+            dots: false,
+            responsive:{
+                0:{
+                    items: 1
+                },
+                480:{
+                    items:2,
+                    margin: 15
+                },
+                768:{
+                    items:3,
+                    margin: 31
+                }
+            }
         });
     /*********************************************************/
     /* end video slider  */
@@ -46,11 +58,29 @@
     /* start catalog slider   */
     /********************************************************/
         $('.catalogList .owl-carousel').owlCarousel({
-            items: 4,
-            margin: 30,
             autoHeight:true,
-            nav: true,
-            dots: false
+            responsive:{
+                0:{
+                    items: 1,
+                    dots: true,
+                    nav: false
+                },
+                480:{
+                    items:2,
+                    margin: 15
+                },
+                768:{
+                    items:3,
+                    margin: 20
+                },
+                1260:{
+                    items:4,
+                    margin: 30,
+                    nav: true,
+                    dots: false
+                }
+
+            }
         });
     /*********************************************************/
     /* end catalog slider  */
@@ -118,6 +148,9 @@
     /*********************************************************/
     /* end gallery   */
     /********************************************************/
+
+
+    $("#openPageslide").sideNav();
 
 
 
